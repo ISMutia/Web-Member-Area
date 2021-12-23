@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 22, 2021 at 01:57 PM
+-- Generation Time: Dec 23, 2021 at 05:40 AM
 -- Server version: 10.4.19-MariaDB
 -- PHP Version: 7.4.20
 
@@ -83,23 +83,6 @@ CREATE TABLE `m_bills` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `m_bills`
---
-
-INSERT INTO `m_bills` (`id`, `id_h_orders`, `bukti`, `id_status`, `total_bayar`, `created_at`, `updated_at`) VALUES
-(40, 71, 'IMG_20191108_185007.jpg', 3, '5000000', '2021-12-20 19:59:14', '2021-12-21 01:53:48'),
-(41, 72, NULL, 3, '20000000', '2021-12-21 01:55:11', '2021-12-21 01:56:49'),
-(42, 73, 'Screenshot_2021-12-18-23-51-14-53_d15124677369a076b7f20d8b3d49d7a4.jpg', 4, '5000000', '2021-12-21 02:24:18', '2021-12-21 23:30:28'),
-(43, 74, 'Screenshot_2021-12-18-23-51-14-53_d15124677369a076b7f20d8b3d49d7a4.jpg', 2, '20000000', '2021-12-21 02:35:33', '2021-12-21 02:46:10'),
-(44, 75, 'IMG-20210921-WA0025.jpg', 1, '3500000', '2021-12-21 07:19:25', '2021-12-21 07:20:25'),
-(45, 76, 'IMG-20210921-WA0023.jpg', 1, '5000000', '2021-12-21 07:23:40', '2021-12-21 07:23:51'),
-(46, 82, NULL, 1, '5000000', '2021-12-21 08:34:49', '2021-12-21 08:34:49'),
-(47, 83, NULL, 1, '20000000', '2021-12-21 09:43:46', '2021-12-21 09:43:46'),
-(48, 84, NULL, 1, '5000000', '2021-12-21 09:48:00', '2021-12-21 09:48:00'),
-(49, 92, NULL, 1, '5,000,000', '2021-12-21 21:51:11', '2021-12-21 21:51:11'),
-(50, 93, 'IMG_20201111_205733.jpg', 1, '3,500,000', '2021-12-21 21:55:04', '2021-12-21 21:56:31');
-
 -- --------------------------------------------------------
 
 --
@@ -136,23 +119,6 @@ CREATE TABLE `m_notification` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `m_notification`
---
-
-INSERT INTO `m_notification` (`id`, `id_h_orders`, `id_customers`, `tittle`, `description`, `created_at`, `updated_at`) VALUES
-(105, NULL, 4, 'Happy Birthday', 'Wish You All The Best', '2021-12-20 12:15:10', '2021-12-20 12:15:10'),
-(106, NULL, 6, 'Happy Birthday', 'Wish You All The Best', '2021-12-20 19:31:21', '2021-12-20 19:31:21'),
-(107, NULL, 9, 'Happy Birthday', 'Wish You All The Best', '2021-12-20 19:36:25', '2021-12-20 19:36:25'),
-(108, 71, 9, 'Domain Expired', 'Your Domain will expired in 1 months', '2021-12-20 20:17:09', '2021-12-20 20:17:09'),
-(116, NULL, 32, 'Happy Birthday hehohi', 'Wish You All The Best', '2021-12-21 03:42:08', '2021-12-21 03:42:08'),
-(117, NULL, 33, 'Happy Birthday Doni romdoni', 'Wish You All The Best', '2021-12-21 03:42:08', '2021-12-21 03:42:08'),
-(118, NULL, 34, 'Happy Birthday doni', 'Wish You All The Best', '2021-12-21 03:42:09', '2021-12-21 03:42:09'),
-(119, NULL, 35, 'Happy Birthday Ade Ridwan', 'Wish You All The Best', '2021-12-21 03:42:09', '2021-12-21 03:42:09'),
-(120, NULL, 36, 'Happy Birthday Doni Romdoni', 'Wish You All The Best', '2021-12-21 03:42:09', '2021-12-21 03:42:09'),
-(121, NULL, 59, 'Happy Birthday hemm', 'Wish You All The Best', '2021-12-22 02:54:56', '2021-12-22 02:54:56'),
-(122, NULL, 65, 'Happy Birthday ghgh', 'Wish You All The Best', '2021-12-22 02:56:44', '2021-12-22 02:56:44');
 
 -- --------------------------------------------------------
 
@@ -340,23 +306,6 @@ CREATE TABLE `trans_d_orders` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `trans_d_orders`
---
-
-INSERT INTO `trans_d_orders` (`id`, `id_h_orders`, `progress`, `created_at`, `updated_at`) VALUES
-(58, 71, 80, '2021-12-20 19:59:14', '2021-12-21 02:18:52'),
-(59, 72, 90, '2021-12-21 01:55:11', '2021-12-21 02:09:12'),
-(60, 73, 10, '2021-12-21 02:24:17', '2021-12-21 02:25:38'),
-(61, 74, 70, '2021-12-21 02:35:33', '2021-12-21 02:48:15'),
-(62, 75, 0, '2021-12-21 07:19:25', '2021-12-21 07:19:25'),
-(63, 76, 0, '2021-12-21 07:23:40', '2021-12-21 07:23:40'),
-(69, 82, 0, '2021-12-21 08:34:49', '2021-12-21 08:34:49'),
-(70, 83, 0, '2021-12-21 09:43:46', '2021-12-21 09:43:46'),
-(71, 84, 0, '2021-12-21 09:48:00', '2021-12-21 09:48:00'),
-(79, 92, 0, '2021-12-21 21:51:11', '2021-12-21 21:51:11'),
-(80, 93, 0, '2021-12-21 21:55:04', '2021-12-21 21:55:04');
-
 -- --------------------------------------------------------
 
 --
@@ -379,23 +328,6 @@ CREATE TABLE `trans_h_orders` (
   `link_group_wa` text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `trans_h_orders`
---
-
-INSERT INTO `trans_h_orders` (`id`, `project_name`, `id_customers`, `id_price`, `name_domain`, `id_domain`, `lama_p`, `mulai_p`, `selesai_p`, `lama_domain`, `created_at`, `updated_at`, `link_group_wa`) VALUES
-(71, 'Website Sekolah', 9, 2, 'smanmaju.co.id', 1, '3 bulan', '2021-12-07', '2021-12-21', '2021-12-21', '2021-12-20 19:59:14', '2021-12-21 01:20:50', 'https://chat.whatsapp.com/JfuZaV1Dzhd8AIXobLkQFo'),
-(72, 'aabccc', 31, 3, 'ABC.com', 1, '2 bulan', '2021-12-21', '2021-12-21', '2021-12-21', '2021-12-21 01:55:11', '2021-12-21 01:57:49', 'https://chat.whatsapp.com/JfuZaV1Dzhd8AIXobLkQFo'),
-(73, 'qwerty', 32, 2, 'qwerty.com', 1, '2 bulan', '2021-12-21', '2021-12-21', '2021-12-21', '2021-12-21 02:24:17', '2021-12-21 02:27:43', 'https://chat.whatsapp.com/JfuZaV1Dzhd8AIXobLkQFo'),
-(74, 'fingerprint', 33, 3, 'fingerprint.com', 1, '2 bulan', '2021-12-21', '2021-12-21', '2021-12-21', '2021-12-21 02:35:33', '2021-12-21 02:45:45', 'https://chat.whatsapp.com/JfuZaV1Dzhd8AIXobLkQFo'),
-(75, 'bubble', 6, 1, 'bubble.co.id', 2, NULL, NULL, NULL, '2021-12-21', '2021-12-21 07:19:25', '2021-12-21 07:19:25', NULL),
-(76, 'Fc', 6, 2, 'FC.co.id', 2, NULL, NULL, NULL, '2021-12-21', '2021-12-21 07:23:40', '2021-12-21 07:23:40', NULL),
-(82, 'hhhh', 11, 2, 'www.com', 2, '3 bulan', '2021-04-05', '2021-07-05', '2021-12-21', '2021-12-21 08:34:49', '2021-12-21 08:34:49', 'http://wa.me'),
-(83, 'qqq', 6, 3, 'qqq.com', 1, NULL, NULL, NULL, '2021-12-21', '2021-12-21 09:43:46', '2021-12-21 09:43:46', NULL),
-(84, 'bbbb', 11, 2, 'www.com', 2, '3 bulan', '2021-04-05', '2021-07-05', '2021-12-21', '2021-12-21 09:48:00', '2021-12-21 09:48:00', 'http://wa.me'),
-(92, 'bbbb', 59, 2, 'www.com', 2, '3 bulan', '2021-04-05', '2021-07-05', '2021-12-22', '2021-12-21 21:51:11', '2021-12-21 21:51:11', 'http://wa.me'),
-(93, 'ghi', 59, 1, 'ABC.com', 1, NULL, NULL, NULL, '2021-12-22', '2021-12-21 21:55:04', '2021-12-21 21:55:04', NULL);
-
 -- --------------------------------------------------------
 
 --
@@ -410,37 +342,6 @@ CREATE TABLE `trans_h_testimonial` (
   `updated_at` timestamp NULL DEFAULT NULL,
   `status` enum('active','non-active') DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `trans_h_testimonial`
---
-
-INSERT INTO `trans_h_testimonial` (`id`, `description`, `id_customers`, `created_at`, `updated_at`, `status`) VALUES
-(2, 'nice', 2, NULL, '2021-12-16 21:44:20', 'non-active'),
-(3, 'amazing', 3, NULL, '2021-12-16 21:44:28', 'non-active'),
-(4, 'wow', 4, NULL, NULL, 'active'),
-(5, 'mantap', 5, NULL, NULL, 'active'),
-(6, 'Good', 6, NULL, NULL, 'active'),
-(7, 'Gila keren banget', 7, NULL, NULL, 'active'),
-(8, 'Bbl Bbl Bagus banget lohhh', 8, NULL, NULL, 'active'),
-(9, 'Keren', 9, NULL, NULL, 'active'),
-(10, 'Tidak mengecewakan', 10, NULL, NULL, 'active'),
-(15, 'wahh mantap', 11, '2021-12-17 22:52:42', '2021-12-17 22:52:42', 'active'),
-(16, 'hallo', 6, '2021-12-17 23:06:34', '2021-12-17 23:06:34', 'active'),
-(17, 'haiii', 6, '2021-12-17 23:10:28', '2021-12-17 23:10:28', 'active'),
-(18, 'hahhahaha', 2, '2021-12-18 08:53:08', '2021-12-18 08:53:08', 'active'),
-(19, 'yuhuuu', 30, '2021-12-18 23:45:13', '2021-12-18 23:45:13', 'active'),
-(20, 'hahahhahahaha', 6, '2021-12-19 04:57:23', '2021-12-19 04:57:23', 'active'),
-(21, 'tgl tbl tbl takut buangett lohh', 32, '2021-12-21 02:26:04', '2021-12-21 02:26:04', 'active'),
-(22, 'tes', 33, '2021-12-21 02:49:40', '2021-12-21 02:49:40', 'active'),
-(23, 'woww', 6, '2021-12-21 07:15:18', '2021-12-21 07:15:18', 'active'),
-(24, 'hehe', 6, '2021-12-21 07:15:59', '2021-12-21 07:15:59', 'active'),
-(25, 'tes', 6, '2021-12-21 07:17:16', '2021-12-21 07:17:16', 'active'),
-(26, 'qwertyuip', 6, '2021-12-21 07:17:48', '2021-12-21 07:17:48', 'non-active'),
-(27, 'huhiho', 6, '2021-12-21 07:18:12', '2021-12-21 07:18:12', 'non-active'),
-(28, 'hhhhhhhh', 6, '2021-12-21 07:25:09', '2021-12-21 07:25:09', 'non-active'),
-(29, 'qeryy', 6, '2021-12-21 07:25:19', '2021-12-21 07:25:19', 'non-active'),
-(30, 'wrdygub', 6, '2021-12-21 07:26:42', '2021-12-21 07:26:42', 'non-active');
 
 -- --------------------------------------------------------
 
@@ -468,31 +369,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `fullname`, `date_birth`, `email`, `password`, `gambar`, `status`, `created_at`, `updated_at`, `contact_wa`, `address`, `token_fcm`) VALUES
-(1, 'admin', '2000-10-04', 'admin@gmail.com', '12345678', NULL, 'admin', NULL, '2021-12-02 00:00:51', '2147483647', 'Jl. Abcd', ''),
-(2, 'royyy', '2001-05-03', 'lin1234@gmail.com', '12345678', 'Capture1.PNG', 'customer', NULL, '2021-12-21 11:27:29', '897654321', 'mnbzxasdfgjklpuytw', ''),
-(3, 'fina imut', '2000-11-06', 'fina1234@gmail.com', '12345678', 'IMG_20210713_153013.jpg', 'customer', NULL, '2021-12-20 13:15:56', '2147483647', 'Jl. Ijkl', 'fXqirkeqSyqmpmHO9w3GRZ:APA91bG8qoqbI0yL0ooyzdDvsH89KaDkKJ7Fkwqqx0_dqdFdD-KUdETULdMo_-5dYVsvZ-2R0_kl9xhs5ODoOhyJTruvbqm78tCNz9f_-Jkk4iy2gf2M6zqDfSwGAToZHedFFevWireQ'),
-(4, 'putri', '2000-12-20', 'putri1234@gmail.com', '12345678', 'IMG_20200918_134751.jpg', 'customer', NULL, '2021-12-20 12:16:48', '2147483647', 'Jl. Mnop', 'fXqirkeqSyqmpmHO9w3GRZ:APA91bG8qoqbI0yL0ooyzdDvsH89KaDkKJ7Fkwqqx0_dqdFdD-KUdETULdMo_-5dYVsvZ-2R0_kl9xhs5ODoOhyJTruvbqm78tCNz9f_-Jkk4iy2gf2M6zqDfSwGAToZHedFFevWireQ'),
-(5, 'doni', '1998-01-21', 'doni1234@gmail.com', '12345678', NULL, 'customer', NULL, '2021-12-02 00:00:28', '2147483647', 'Jl. Qrst', ''),
-(6, 'mutia cimutt', '2000-12-21', 'adikmutia@gmail.com', '12345678', 'IMG_20201111_205733.jpg', 'customer', NULL, '2021-12-21 12:07:02', '2147483647896', 'Jlqwetyevdime', 'fXqirkeqSyqmpmHO9w3GRZ:APA91bG8qoqbI0yL0ooyzdDvsH89KaDkKJ7Fkwqqx0_dqdFdD-KUdETULdMo_-5dYVsvZ-2R0_kl9xhs5ODoOhyJTruvbqm78tCNz9f_-Jkk4iy2gf2M6zqDfSwGAToZHedFFevWireQ'),
-(7, 'ibrahim', '1966-05-14', 'ibrahim@gmail.com', '12345678', NULL, 'customer', NULL, NULL, '2147483647', 'Jl. Aaaaaaaa', ''),
-(8, 'Salmi', '1968-09-09', 'salmi09@gmail.com', '12345678', 'IMG_20201111_205733.jpg', 'customer', NULL, '2021-12-21 03:36:43', '2147483647', 'Jl. Bbbbbbbbb', 'fXqirkeqSyqmpmHO9w3GRZ:APA91bG8qoqbI0yL0ooyzdDvsH89KaDkKJ7Fkwqqx0_dqdFdD-KUdETULdMo_-5dYVsvZ-2R0_kl9xhs5ODoOhyJTruvbqm78tCNz9f_-Jkk4iy2gf2M6zqDfSwGAToZHedFFevWireQ'),
-(9, 'I.S. Azizah', '1998-12-21', 'azizah@gmail.com', '12345678', 'IMG_20210911_233840.jpg', 'customer', NULL, '2021-12-20 19:58:10', '2147483647', 'Jl. Ccccccc', 'fXqirkeqSyqmpmHO9w3GRZ:APA91bG8qoqbI0yL0ooyzdDvsH89KaDkKJ7Fkwqqx0_dqdFdD-KUdETULdMo_-5dYVsvZ-2R0_kl9xhs5ODoOhyJTruvbqm78tCNz9f_-Jkk4iy2gf2M6zqDfSwGAToZHedFFevWireQ'),
-(10, 'aderidwan', '2002-12-02', 'aderidwan@gmail.com', '12345678', NULL, 'customer', NULL, NULL, '2147483647', 'Jl. Dddddddd', ''),
-(11, 'hahha', '2021-12-01', 'hahaha@gmail.com', '12345678', NULL, 'customer', NULL, NULL, '1234567819', 'hahhahha', ''),
-(30, 'sahaaa', '2006-12-04', 'saha@gmail.com', '12345678', NULL, 'customer', '2021-12-18 23:43:39', '2021-12-18 23:44:19', '1234', 'qwertyu', ''),
-(31, 'aaaa', '2021-12-01', 'aaa@gmail.com', '12345678', NULL, 'customer', '2021-12-20 20:11:12', '2021-12-22 00:10:15', '12345678', 'Jl.abcd', 'fXqirkeqSyqmpmHO9w3GRZ:APA91bG8qoqbI0yL0ooyzdDvsH89KaDkKJ7Fkwqqx0_dqdFdD-KUdETULdMo_-5dYVsvZ-2R0_kl9xhs5ODoOhyJTruvbqm78tCNz9f_-Jkk4iy2gf2M6zqDfSwGAToZHedFFevWireQ'),
-(32, 'hehohi', '2021-12-21', 'haha@gmail.com', '12345678', 'IMG20211220160524.jpg', 'customer', '2021-12-21 02:22:21', '2021-12-21 02:23:53', '98654321', 'jl.mnbvx', 'fXqirkeqSyqmpmHO9w3GRZ:APA91bG8qoqbI0yL0ooyzdDvsH89KaDkKJ7Fkwqqx0_dqdFdD-KUdETULdMo_-5dYVsvZ-2R0_kl9xhs5ODoOhyJTruvbqm78tCNz9f_-Jkk4iy2gf2M6zqDfSwGAToZHedFFevWireQ'),
-(34, 'doni', '2021-12-21', 'doni123456@gmail.com', '123457889', NULL, 'customer', '2021-12-21 03:22:54', '2021-12-21 03:22:54', NULL, NULL, NULL),
-(35, 'Ade Ridwan', '2021-12-21', 'sukun024@gmail.com', '12345678e', NULL, 'customer', '2021-12-21 03:27:57', '2021-12-21 03:28:05', NULL, NULL, 'eVqwk8QLTOykofkAVlF5Dn:APA91bE7LVsGiZhADd_yAZ5eyHcMITtDuDZ0KzJz2Vne0SL6vgoVJYjNqYAmqDdw9DcSY_1u4S8cXB2kQRiMQfivoRZ0CHJ2MJ2hiB_ef_MzBoNAOIDrvY3QcDuYE15u7ZMjK0JzwZJp'),
-(50, 'lin', '2021-12-21', 'lin124@gmail.com', '$2y$10$5PdOfh5wlqK4/Q6PCSwRAOzelgu.7jpdDHsuXVlQ.JgFr90ZO/ZJC', NULL, 'customer', '2021-12-21 08:57:31', '2021-12-21 08:57:31', NULL, NULL, NULL),
-(51, 'no', '2021-12-21', 'no1@gmail.com', 'no1', NULL, 'customer', '2021-12-21 08:58:55', '2021-12-21 08:59:05', NULL, NULL, 'fXqirkeqSyqmpmHO9w3GRZ:APA91bG8qoqbI0yL0ooyzdDvsH89KaDkKJ7Fkwqqx0_dqdFdD-KUdETULdMo_-5dYVsvZ-2R0_kl9xhs5ODoOhyJTruvbqm78tCNz9f_-Jkk4iy2gf2M6zqDfSwGAToZHedFFevWireQ'),
-(52, 'asdf', '2021-12-21', 'asdf@gmail.com', '$2y$10$4zldai61k71aMVj5jG1p1eupSa.LasNPrcYuEUBAE/22lxv5/6a16', NULL, 'customer', '2021-12-21 09:21:32', '2021-12-21 09:21:32', NULL, NULL, NULL),
-(53, 'lalalala', '2000-10-04', 'lala1234@gmail.com', '$2y$10$Ony/VDe8pelsJbkzwqOQEO4XeljrBlW1Da81pnHkSkUHOV67AymA.', NULL, 'customer', '2021-12-21 09:31:17', '2021-12-21 09:31:17', NULL, NULL, NULL),
-(56, 'yyyy', '2021-12-10', 'yyyy123@gmail.com', '12345678', NULL, 'customer', '2021-12-21 19:57:12', '2021-12-21 19:57:32', NULL, NULL, 'fXqirkeqSyqmpmHO9w3GRZ:APA91bG8qoqbI0yL0ooyzdDvsH89KaDkKJ7Fkwqqx0_dqdFdD-KUdETULdMo_-5dYVsvZ-2R0_kl9xhs5ODoOhyJTruvbqm78tCNz9f_-Jkk4iy2gf2M6zqDfSwGAToZHedFFevWireQ'),
-(58, 'ssss', '2021-12-09', 'sssss@gmail.com', '$2y$10$pda81.Sch8DkO2RD/RU4R.vfSI1X1QM/tjF9gLLZUOZEZ4/5ZTSmq', NULL, 'customer', '2021-12-21 20:13:02', '2021-12-21 20:13:02', NULL, NULL, NULL),
-(59, 'hemm', '2021-12-22', 'hemm@gmail.com', '$2y$10$lacSztAgTJzAExeWO5Rl..bSXw6iXpE505L7q/jNJTvwQ0cQzgJrW', NULL, 'customer', '2021-12-21 20:48:09', '2021-12-21 20:50:31', NULL, NULL, 'fXqirkeqSyqmpmHO9w3GRZ:APA91bG8qoqbI0yL0ooyzdDvsH89KaDkKJ7Fkwqqx0_dqdFdD-KUdETULdMo_-5dYVsvZ-2R0_kl9xhs5ODoOhyJTruvbqm78tCNz9f_-Jkk4iy2gf2M6zqDfSwGAToZHedFFevWireQ'),
-(64, 'lalalala', '2000-10-04', 'test@gmail.com', '$2y$10$cfUKdJPYOV7X/Ho4sGWtP.la8i9OrDpDYgDgLkMCifpEhTOZWk.9y', NULL, 'customer', '2021-12-22 01:56:30', '2021-12-22 01:56:30', NULL, NULL, NULL),
-(65, 'ghgh', '2021-12-22', 'ghgh12@gmail.com', '$2y$10$Y6oVVdNSvdEr3XIKZiiT/.aNhuyydPrvxE5Pro4L8RBovm4.xlQAm', NULL, 'customer', '2021-12-22 02:45:42', '2021-12-22 02:56:37', NULL, NULL, 'du4CbOrVREqdLgwqTw3e4B:APA91bGcZxpjRDqdQt09rWszvS1URXXo8zKtM1GI-2W8_yBtmnABbL2kxdXUGr14Ip4b_nSdX7wuAQiHWTaIUye-hq855cB6Wo9A0ZEg2qV2yETXLPak2K0ii-QtanuvEMmhDRIRfkju');
+(1, 'admin', '2000-10-04', 'admin@gmail.com', '12345678', NULL, 'admin', NULL, '2021-12-02 00:00:51', '2147483647', 'Jl. Abcd', '');
 
 -- --------------------------------------------------------
 
@@ -667,7 +544,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `m_bills`
 --
 ALTER TABLE `m_bills`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
 
 --
 -- AUTO_INCREMENT for table `m_domain`
@@ -715,13 +592,13 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT for table `trans_d_orders`
 --
 ALTER TABLE `trans_d_orders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=81;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=82;
 
 --
 -- AUTO_INCREMENT for table `trans_h_orders`
 --
 ALTER TABLE `trans_h_orders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=94;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=95;
 
 --
 -- AUTO_INCREMENT for table `trans_h_testimonial`

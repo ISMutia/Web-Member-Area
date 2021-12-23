@@ -42,7 +42,7 @@ class ProjectController extends Controller
 
     public function finish()
     {
-        $status = 'Finish';
+        $status = 'Finished';
         $data = $this->getProjectByStatus($status);
 
         return view('progress.project', [
